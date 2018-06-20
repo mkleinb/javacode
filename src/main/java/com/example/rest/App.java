@@ -51,8 +51,8 @@ public class App {
     private static void runGetRequest() {
  
     	// sample URL
-     //for (int i=0;i<10;i++) {
-        String url = "http://140.86.15.104:3000/shield/33/45/blue/mkleinb";
+     for (int i=0;i<10;i++) {
+        String url = "http://140.86.15.104:3000/shield/45/i/blue/mkleinb";
         CloseableHttpResponse response = null;
  
         try {
@@ -72,7 +72,7 @@ public class App {
                 System.out.println(ie);
             }
         }
-    // }
+     }
     }
  
     /**
