@@ -52,7 +52,7 @@ public class App {
  
     	// sample URL
      for (int i=0;i<10;i++) {
-        String url = "http://140.86.15.104:3000/shield/45/i/blue/mkleinb";
+        String url = "http://140.86.15.104:3000/fighters/45/i/blue/mkleinb";
         CloseableHttpResponse response = null;
  
         try {
