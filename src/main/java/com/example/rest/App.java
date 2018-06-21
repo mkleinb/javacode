@@ -42,7 +42,7 @@ public class App {
         System.out.println("Server started");
  
         runGetRequest();
-        //runDatabaseQuery();
+        runDatabaseQuery();
     }
  
     /**
@@ -51,8 +51,9 @@ public class App {
     private static void runGetRequest() {
  
     	// sample URL
-     for (int i=0;i<10;i++) {
-        String url = "http://140.86.15.104:3000/fighters/45/" + i + "/blue/mkleinb";
+//     for (int i=0;i<10;i++) {
+//        String url = "http://140.86.15.104:3000/fighters/45/" + i + "/blue/mkleinb";
+        String url = "http://140.86.15.104:3000/reactorCore/33/45/blue/mkleinb";
         CloseableHttpResponse response = null;
  
         try {
@@ -72,17 +73,17 @@ public class App {
                 System.out.println(ie);
             }
         }
-     }
+//     }
     }
  
     /**
      * Performs a call to the database.
      */
     private static void runDatabaseQuery() {
-        String host = "myHost";
-        String database = "myDatabase";
-        String user = "myUsername";
-        String password = "myPassword";
+        String host = "140.86.15.104";
+        String database = "deathstar";
+        String user = "Captain";
+        String password = "welcome1";
         DBConnection db = new DBConnection("jdbc:mysql://" 
                 + host + "/" 
                 + database + "?user=" 
