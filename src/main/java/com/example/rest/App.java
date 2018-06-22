@@ -51,9 +51,9 @@ public class App {
     private static void runGetRequest() {
  
     	// sample URL
-     for (int i=0;i<10;i++) {
-        String url = "http://140.86.15.104:3000/fighters/45/" + i + "/blue/mkleinb";
-//        String url = "http://140.86.15.104:3000/reactorCore/33/45/blue/mkleinb";
+//     for (int i=0;i<10;i++) {
+//        String url = "http://140.86.15.104:3000/fighters/45/" + i + "/blue/mkleinb";
+        String url = "http://140.86.15.104:3000/reactorCore/320/650/blue/mkleinb/";
         CloseableHttpResponse response = null;
  
         try {
@@ -73,7 +73,7 @@ public class App {
                 System.out.println(ie);
             }
         }
-     }
+//     }
     }
  
     /**
